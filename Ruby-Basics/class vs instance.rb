@@ -1,8 +1,15 @@
-class abc
-    def print
-        p yes
+class Invoice
+    
+    def self.print_out
+        p "printed out invoice"
+    end
 
-def bcd
-    p noo
+    def converted_to_pdf
+        p "Converted to PDF"
+    end
+    
+end
 
-abc.print
+Invoice.print_out   # class method
+i = Invoice.new     # instance method
+i.converted_to_pdf
